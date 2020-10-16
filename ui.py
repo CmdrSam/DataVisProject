@@ -38,9 +38,7 @@ trace = go.Bar(
     x=cnt_srs.index,
     y=cnt_srs.values,
     marker=dict(
-        color='#ffa600',
-    #    colorscale = 'Picnic',
-    #    reversescale = True
+        color='#ffa600'
     ),
 )
 
