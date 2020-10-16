@@ -1,3 +1,5 @@
+                # Using streamlit, run using ==> streamlit run first_app.py
+
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -51,7 +53,11 @@ displayPlot(data)
 
 st.write("This should take less time")
 
+option = st.sidebar.selectbox(
+    'Which number do you like best?',
+     df['first column'])
 
+'You selected:', option
 
         # To make table
 # st.write(pd.DataFrame({
