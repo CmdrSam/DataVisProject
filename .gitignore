@@ -1,3 +1,7 @@
+# Huge CSVs
+/data/Stack_overflow_survey_results_public.csv
+/data/Stack_overflow_survey_results_schema.csv
+
 # Files
 *.DS_Store
 *.vscode
@@ -153,3 +157,4 @@ dmypy.json
 # Pyre type checker
 .pyre/
 .vscode/settings.json
+
