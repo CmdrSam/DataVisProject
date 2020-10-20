@@ -1,2 +1,6 @@
-# DataVisProject
- Visualizing the survey data for Data Science/ Machine Learing
+# Data Visualization Project
+
+- Visualizing the survey data for Data Science/ Machine Learing
+
+
+
