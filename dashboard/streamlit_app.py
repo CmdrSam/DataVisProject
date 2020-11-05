@@ -13,10 +13,20 @@ import plotly.io as pio
 
 if __name__ == "__main__":
     # Use write for most of the text
-    st.title('DataViz for DataViz')
-    st.write("Starting Data science journey can be difficult, let us help you.")
+    st.title('RoadMap for Data Science')
+    # st.balloons()
 
-    exp = st.radio("How experienced are you ? ", ("No Idea", "Beginner", "Expert"), index=0)
+    st.subheader("Starting Data science journey can be difficult, let us help you.")
+
+    st.subheader("Answer a few questions on left sidebar and we would display you a complete guide")
+
+    # exp = st.radio("How experienced are you with Data Science ? ", ("No Idea", "Beginner", "Expert"), index=0)
+
+    exp = st.sidebar.selectbox('How experienced are you with Data Science ?',
+                               options=["No Idea", "Beginner", "Expert"], index=0)
+
+    edu = st.sidebar.select_slider("Select your education",
+                            options=["High School", "Undergrad", "Post-Grad", "PhD"])
 
     if exp == "No Idea":
         st.write("Hey have a look at Data Science")
@@ -25,19 +35,8 @@ if __name__ == "__main__":
         st.write("Let us help you to get started in Data Science")
 
     elif exp == "Expert":
+        interest = st.sidebar.radio("What's your Key Interest", ('Computer Vision', 'NLP', 'Data Science'))
         st.write("Hey, you look expreinced, let us explore some new concepts")
-        # st.image("../visualizations/newplot (5).png")
-        # st.image("../visualizations/newplot (6).png")
-        # st.image("../visualizations/newplot (7).png")
-
-    # if st.button('Say hello'):
-    #     st.write('Why hello there')
-        # st.image("../visualizations/newplot (1).png")
-        # st.image("../visualizations/newplot (2).png")
-        # st.image("../visualizations/newplot (3).png")
-        # st.image("../visualizations/newplot (4).png")
 
 
-    # else:
-    #     st.write('Goodbye')    
-    
+
